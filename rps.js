@@ -32,6 +32,10 @@ console.log(getHumanChoice())
 let humanScore = 0; let computerScore = 0;
 
 
-function winner() {
-    
+function playRound(humanScore,computerScore) {
+
+    let humanChoice = getHumanChoice().toLowerCase();
+    let computerChoice = getComputerChoice().toLowerCase();
+
+
 }
