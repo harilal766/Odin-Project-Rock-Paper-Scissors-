@@ -37,5 +37,12 @@ function playRound(humanScore,computerScore) {
     let humanChoice = getHumanChoice().toLowerCase();
     let computerChoice = getComputerChoice().toLowerCase();
 
+    /*
+    This game is played in one round, and there are three three type of outcomes.,
+    1. rock and paper
+    2. paper and scissors
+    3. scissors and rock
+    */
+
 
 }
