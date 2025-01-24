@@ -26,16 +26,9 @@ function getHumanChoice(){
     return userChoice;
 }
 
-console.log(getHumanChoice())
-
-
-let humanScore = 0; let computerScore = 0;
-
 
 function playRound(humanScore,computerScore) {
-
-    let humanChoice = getHumanChoice().toLowerCase();
-    let computerChoice = getComputerChoice().toLowerCase();
+    let humanScore = 0; let computerScore = 0;
 
     /*
     This game is played in one round, and there are three three type of outcomes.,
@@ -44,5 +37,27 @@ function playRound(humanScore,computerScore) {
     3. scissors and rock
     */
 
+    if (humanSelection === "rock" && computerSelection === "scissors") {
+        humanScore = 1;
+    }
+
+    /* 
+    Winner announce code
+    This will be based on the score;
+
+    who has the greater score will be considered as winner.
+    */
+    if (humanScore > computerScore){
+        console.log(`You win, ${humanSelection} beats ${computerSelection}.`);
+    }
+    else {
+        console.log(`You lose, ${computerSelection} beats ${humanSelection}.`);
+    }
 
 }
+
+let humanSelection = getHumanChoice().toLowerCase();
+let computerSelection = getComputerChoice().toLowerCase();
+
+
+playRound(humanSelection,computerSelection)
