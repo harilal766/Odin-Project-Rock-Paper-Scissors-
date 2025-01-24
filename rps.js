@@ -19,4 +19,19 @@ function getComputerChoice() {
 
 }
 
-console.log(getComputerChoice())
+
+function getHumanChoice(){
+    let userChoice = prompt("Enter your choice");
+
+    return userChoice;
+}
+
+console.log(getHumanChoice())
+
+
+let humanScore = 0; let computerScore = 0;
+
+
+function winner() {
+    
+}
