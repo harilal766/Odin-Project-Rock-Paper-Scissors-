@@ -65,15 +65,20 @@ function playRound(humanScore,computerScore,humanSelection,computerSelection) {
             console.log(`You lose, ${computerSelection} beats ${humanSelection}.`);
         }
     }
-    
-
-    
-
-
 }
 
 let humanSelection = getHumanChoice().toLowerCase();
 let computerSelection = getComputerChoice().toLowerCase();
 
 
-playRound(humanScore,computerScore,humanSelection,computerSelection)
+
+function playGame(){
+    for(let i=0; i<5; i++ ){
+        console.log();
+        playRound(humanScore,computerScore,humanSelection,computerSelection);
+    }
+}
+
+
+playGame();
+
